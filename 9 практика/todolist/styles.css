@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: turquoise;
+}
+
+#to-do-list{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+#welcome-text{
+    font-size: 60px;
+    color: white;
+}
+
+#task{
+    margin-top: 70px;
+    font-size: 20px;
+    color: white;
+}
+
+#input-block input {
+    margin-top: 70px;
+    width: 50vw;
+    height: 42px;
+    padding-left: 10px;
+    border: 2px solid #7BA7AB;
+    border-radius: 5px;
+    outline: none;
+    background: #F9F0DA;
+    color: #9E9C9C;
+}
+
+#list-block{
+    justify-content: center;
+    
+}
+
+.list-item{
+    display: relative;
+    list-style: none;
+    margin-left: 24vw;
+    margin-top: 10px;
+    padding: 10px;
+    border: 2px solid #f3f3f3;
+    border-radius: 5px;
+    width: 51vw;
+    font-size: 30px;
+    text-align: start;
+}
+
+.list-item>a{
+    border: 2px solid #8b1010;
+    border-radius: 5px;
+    cursor: pointer;
+    float:right;
+}
