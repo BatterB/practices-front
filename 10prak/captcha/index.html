@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=yes">
+    <link rel="stylesheet" href="styles.css">
+    <title>Captcha</title>
+</head>
+<body>
+    <div class = "captcha-block">
+        <span class="title">Капча на js</span>
+        <div id="captcha">
+            <img src="images/background.jpg" height="100px" width="400px">
+            <img id="refresh" src="images/refresh.png" height="50px" width="50px">
+            <span id="captcha-text"></span>
+        </div>
+        <div class = "input-form">
+            <form id="captcha-form">
+                <input id="task-input" type="text" placeholder="Введите капчу">
+                <input id="submit-button" type="submit" name="Submit" value="Проверить">
+            </form>
+        </div>
+        <span id="status"></span>
+    </div>
+    <script type="module" src="index.js"></script>
+</body>

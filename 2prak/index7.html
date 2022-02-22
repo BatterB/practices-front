@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>PRAC-10</title>
+
+<meta charset="utf-8">
+
+<script>
+
+window.onload = function() {
+
+var drawingCanvas = document.getElementById('smile'); if(drawingCanvas && drawingCanvas.getContext) {
+var context = drawingCanvas.getContext('2d'); 
+context.strokeStyle = "#000"; 
+context.fillStyle = "#2CA500"; 
+context.beginPath(); 
+context.arc(100,100,50,0,Math.PI*2,true); 
+context.closePath();
+context.stroke(); 
+context.fill(); 
+context.fillStyle = "#3CE200"; 
+context.beginPath();
+context.arc(100,100,25,0,Math.PI*2,true); context.closePath();
+context.stroke(); context.fill();
+context.fillStyle = "#FFAF72"; 
+context.beginPath(); 
+context.lineTo(150,150); 
+context.lineTo(150,300); 
+context.lineTo(300,150);
+context.closePath();
+
+context.fill();  
+context.fillStyle = "#FF6F00"; 
+context.beginPath(); 
+context.lineTo(160,160); 
+context.lineTo(160,275); 
+context.lineTo(275,160); 
+context.closePath(); 
+context.fill();  
+context.fillStyle = "#0030D0"; 
+context.beginPath(); 
+context.rect(300, 200, 300, 100); 
+context.closePath(); 
+context.fill();  
+context.fillStyle = "#708FF6"; 
+context.beginPath(); 
+context.rect(312, 210, 275, 75); 
+context.closePath(); 
+context.fill();
+}
+
+}
+
+</script>
+
+</head>
+
+<body>
+
+<canvas id="smile" width="800" height="500">
+
+<p>Ваш браузер не поддерживает рисование.</p>
+
+</canvas>
+
+Елизаров Дмитрий
+
+</body>
+
+</html>
